@@ -1,0 +1,88 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: grid;
+    gap: 2em 1.5em;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 25% 25% 25% 25%; 
+    margin: 10px;
+    width: 40%;
+    height: 600px;
+    margin-left: 25%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.firstRow {
+    display: flex;
+    justify-content: space-between;
+    grid-column:1/6 ;
+    grid-row: 1/2;
+}
+
+.firstRow div {
+    width: 47%;
+    border: 1px solid black;
+}
+
+.firstRow p{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.firstRow img{
+    border: 0px solid black;
+}
+
+.middleRowPhoto1 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.middleRowPhoto2 {
+    grid-column: 2/3 ;
+    grid-row: 2/3; 
+}
+
+.middleRowPhoto3 {
+    grid-column: 3/5;
+    grid-row: 2/4;
+}
+
+.middleRowPhoto4{
+    grid-row: 2/3;
+    grid-column: 5/6;
+}
+
+.middleRowPhoto5{
+    grid-row: 3/4;
+    grid-column: 1/3;
+}
+
+.middleRowPhoto6{
+    grid-row: 3/4;
+    grid-column: 5/6;
+}
+
+.lastRowPhoto1{
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+.lastRowPhoto2{
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+.lastRowPhoto3{
+    grid-column: 3/6 ;
+    grid-row: 4/5;
+}
